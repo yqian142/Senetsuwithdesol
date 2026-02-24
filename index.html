@@ -1,15 +1,528 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DESOL - ゲームアートプロデューサー ポートフォリオ</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', 'Noto Sans JP', sans-serif;
+        }
+        
+        .hover-shadow:hover {
+            box-shadow: 8px 8px 0px 0px rgba(0,0,0,1);
+        }
+    </style>
+</head>
+<body class="bg-white text-neutral-900">
 
-  <!DOCTYPE html>
-  <html lang="en">
-    <head>
-      <meta charset="UTF-8" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <title>Untitled</title>
-    </head>
+    <!-- Fixed Header -->
+    <header class="fixed top-0 left-0 right-0 bg-white border-b-2 border-neutral-900 z-50">
+        <div class="flex items-center justify-between px-6 py-4 max-w-7xl mx-auto">
+            <div class="flex items-center gap-4">
+                <span class="text-xs font-bold">ゲームアートプロデューサー ポートフォリオ</span>
+                <div class="w-2 h-2 bg-neutral-900 rounded-full"></div>
+            </div>
 
-    <body>
-      <div id="root"></div>
-      <script type="module" src="/src/main.tsx"></script>
-    </body>
-  </html>
-  
+            <nav class="flex items-center gap-6">
+                <a href="#visual" class="text-xs font-bold border-b-2 border-transparent hover:border-neutral-900 transition-colors">
+                    ビジュアル進化
+                </a>
+                <a href="#pipeline" class="text-xs font-bold border-b-2 border-transparent hover:border-neutral-900 transition-colors">
+                    制作パイプライン
+                </a>
+                <a href="#workflow" class="text-xs font-bold border-b-2 border-transparent hover:border-neutral-900 transition-colors">
+                    制作課題
+                </a>
+                <a href="#tools" class="text-xs font-bold border-b-2 border-transparent hover:border-neutral-900 transition-colors">
+                    協働ツール
+                </a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="pt-24 pb-12 px-6 min-h-screen flex items-center">
+        <div class="w-full max-w-7xl mx-auto">
+            <!-- Top Title -->
+            <div class="text-center mb-8">
+                <h1 class="text-[100px] leading-none font-black tracking-tighter mb-3">
+                    DESOL
+                </h1>
+                <p class="text-xs tracking-widest font-bold mb-2">GAME ART PRODUCTION</p>
+                <h2 class="text-xl tracking-wide font-bold">
+                    実存主義 × 無機 × 自由意志
+                </h2>
+            </div>
+
+            <!-- Main Content Grid -->
+            <div class="grid grid-cols-12 gap-6">
+                <!-- Left Column - Game Cover -->
+                <div class="col-span-5">
+                    <div class="border-2 border-neutral-900 relative overflow-hidden" style="aspect-ratio: 4666/3500;">
+                        <img 
+                            src="https://images.unsplash.com/photo-1759655172222-5948a9a49bf8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxkZXNlcnQlMjBzdXJ2aXZhbCUyMGdhbWUlMjBsYW5kc2NhcGV8ZW58MXx8fHwxNzcxOTU3NDc4fDA&ixlib=rb-4.1.0&q=80&w=1080"
+                            alt="DESOL Game Cover"
+                            class="w-full h-full object-cover"
+                        />
+                    </div>
+                </div>
+
+                <!-- Right Column - Info -->
+                <div class="col-span-7 space-y-6">
+                    <!-- Core Achievement Highlight -->
+                    <div class="border-2 border-neutral-900 bg-neutral-900 p-5">
+                        <div class="flex items-center gap-3 mb-3">
+                            <div class="w-8 h-8 bg-white border-2 border-white flex items-center justify-center shrink-0">
+                                <span class="text-lg">★</span>
+                            </div>
+                            <h3 class="text-sm font-bold text-white">
+                                コア成果 / CORE ACHIEVEMENT
+                            </h3>
+                        </div>
+                        <p class="text-base leading-relaxed text-white font-bold">
+                            未経験チームで3D制作体制を構築
+                        </p>
+                        <p class="text-xs leading-relaxed text-neutral-300 mt-2">
+                            3Dゲーム制作未経験7名の育成および制作パイプライン構築。
+                        </p>
+                    </div>
+
+                    <!-- Production Details -->
+                    <div class="border-2 border-neutral-900 p-5">
+                        <h3 class="text-sm mb-4 font-bold border-b-2 border-neutral-900 pb-2">
+                            制作概要
+                        </h3>
+                        <div class="grid grid-cols-2 gap-4 text-xs">
+                            <div>
+                                <p class="font-bold mb-1">開発期間</p>
+                                <p>2025年9月 - 現在</p>
+                            </div>
+                            <div>
+                                <p class="font-bold mb-1">現状</p>
+                                <p>Alpha達成</p>
+                            </div>
+                            <div>
+                                <p class="font-bold mb-1">開発引擎</p>
+                                <p>Unity</p>
+                            </div>
+                            <div>
+                                <p class="font-bold mb-1">担当役割</p>
+                                <p>アートプロデューサー</p>
+                            </div>
+                            <div>
+                                <p class="font-bold mb-1">プラットフォーム</p>
+                                <p>PC</p>
+                            </div>
+                            <div>
+                                <p class="font-bold mb-1">ジャンル</p>
+                                <p>サバイバルアドベンチャー</p>
+                            </div>
+                            <div>
+                                <p class="font-bold mb-1">チーム人数</p>
+                                <p>31人</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Game Description -->
+                    <div class="border-2 border-neutral-900 p-5">
+                        <h3 class="text-sm mb-3 font-bold border-b-2 border-neutral-900 pb-2">
+                            ゲーム概要
+                        </h3>
+                        <div class="text-xs leading-relaxed space-y-2">
+                            <p>
+                                本作は、不気味な砂漠を舞台とするサバイバルアドベンチャーです。砂漠では、巨大な存在が静かに砂を動かし、世界の姿を変え続けています。
+                            </p>
+                            <p>
+                                プレイヤーはもなき旅人。限られた命を抱え、無慈悲な世界をさまよいます。砂の下眠る失われた文明の痕跡をたどりながら人類が夢見る楽園「ウォーターパラダイス（Water Paradise）」を目指します。
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Core Concept -->
+                    <div class="border-2 border-neutral-900 p-5">
+                        <h3 class="text-sm mb-3 font-bold border-b-2 border-neutral-900 pb-2">
+                            コアコンセプト
+                        </h3>
+                        <div class="text-xs leading-relaxed">
+                            <p>
+                                実存主義的な世界観の中で、無機質な砂漠と自由意志を持つプレイヤーの対比を描きます。この世界では、すべての選択に意味があり、一瞬たりとも無駄にはできません。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Visual Evolution Section -->
+    <section id="visual" class="py-12 px-6 border-t-2 border-neutral-900 bg-white">
+        <div class="w-full max-w-7xl mx-auto">
+            <!-- Section Header -->
+            <div class="mb-8">
+                <div class="grid grid-cols-12 gap-8 items-center border-b-2 border-neutral-900 pb-8">
+                    <!-- Title -->
+                    <div class="col-span-5">
+                        <h2 class="text-[64px] leading-[1.0] font-black tracking-tighter">ビジュアル進化</h2>
+                    </div>
+                    
+                    <!-- Description -->
+                    <div class="col-span-7">
+                        <div class="border-l-4 border-neutral-900 pl-6">
+                            <h3 class="text-base mb-3 font-bold tracking-wide">視覚表現の統一 / VISUAL EVOLUTION</h3>
+                            <p class="text-sm leading-relaxed text-neutral-700">
+                                Directorのビジュアルビジョン（カートゥーンレンダリング）を構造化・共有化し、制作指針として確立。アセット制作およびShader設計の起点を設計した。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Two Column Layout - Before (1) + Now (2 in one box) -->
+            <div class="grid grid-cols-2 gap-4">
+                <!-- Before - Single Image -->
+                <div class="bg-neutral-100 border-2 border-neutral-900 p-2">
+                    <div class="mb-2 pb-1 border-b border-neutral-300">
+                        <h3 class="text-[10px] font-black tracking-widest">以前 / PREVIOUS</h3>
+                    </div>
+                    <img 
+                        src="https://images.unsplash.com/photo-1679934370702-fea767143fb3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjYXJ0b29uJTIwZGVzZXJ0JTIwY2hhcmFjdGVyJTIwZ2FtZSUyMGFydHxlbnwxfHx8fDE3NzE5NTc0ODN8MA&ixlib=rb-4.1.0&q=80&w=1080"
+                        alt="Previous visual style"
+                        class="w-full h-64 object-contain block"
+                    />
+                </div>
+
+                <!-- Now - Two Images in One Box -->
+                <div class="bg-neutral-900 border-2 border-neutral-900 p-2">
+                    <div class="mb-2 pb-1 border-b border-neutral-700">
+                        <h3 class="text-[10px] font-black tracking-widest text-white">現在 / NOW</h3>
+                    </div>
+                    <div class="grid grid-cols-2 gap-2">
+                        <img 
+                            src="https://images.unsplash.com/photo-1761409910769-f9b2bab77dc8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxhYnN0cmFjdCUyMG1pbmltYWxpc3QlMjBkZXNlcnR8ZW58MXx8fHwxNzcxOTU3NDg0fDA&ixlib=rb-4.1.0&q=80&w=1080"
+                            alt="Current visual style 1"
+                            class="w-full h-64 object-cover block"
+                        />
+                        <img 
+                            src="https://images.unsplash.com/photo-1759655172222-5948a9a49bf8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxkZXNlcnQlMjBzdXJ2aXZhbCUyMGdhbWUlMjBsYW5kc2NhcGV8ZW58MXx8fHwxNzcxOTU3NDc4fDA&ixlib=rb-4.1.0&q=80&w=1080"
+                            alt="Current visual style 2"
+                            class="w-full h-64 object-cover block"
+                        />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pipeline Section -->
+    <section id="pipeline" class="py-16 px-6 border-t-2 border-neutral-900 bg-white">
+        <div class="w-full max-w-7xl mx-auto">
+            <!-- Section Header -->
+            <div class="mb-12 border-b-2 border-neutral-900 pb-8">
+                <div class="grid grid-cols-12 gap-8 items-center">
+                    <!-- Dramatic Title -->
+                    <div class="col-span-5">
+                        <h2 class="text-[64px] leading-[1.0] font-black tracking-tighter">
+                            制作パイプライン
+                        </h2>
+                    </div>
+
+                    <!-- Description -->
+                    <div class="col-span-7">
+                        <div class="border-l-4 border-neutral-900 pl-6">
+                            <h3 class="text-base mb-3 font-bold tracking-wide">パイプライン設計 / PRODUCTION PIPELINE</h3>
+                            <p class="text-sm leading-relaxed text-neutral-700">
+                                Art・Design・Engineerの三部門が並行推進する制作フローを構築。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Content Grid -->
+            <div class="grid grid-cols-12 gap-8">
+                <!-- Left column - Key Points -->
+                <div class="col-span-4">
+                    <div class="border-2 border-neutral-900 p-6 bg-white">
+                        <h3 class="text-base mb-4 font-black tracking-wide">主要ポイント / KEY POINTS</h3>
+                        <ul class="space-y-3 text-sm">
+                            <li class="flex items-start gap-3 pb-3 border-b border-neutral-300">
+                                <span class="font-bold">01</span>
+                                <span>並行作業による効率化</span>
+                            </li>
+                            <li class="flex items-start gap-3 pb-3 border-b border-neutral-300">
+                                <span class="font-bold">02</span>
+                                <span>タスク間の柔軟な連携</span>
+                            </li>
+                            <li class="flex items-start gap-3 pb-3 border-b border-neutral-300">
+                                <span class="font-bold">03</span>
+                                <span>フェーズ凍結による変更波及制御</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <span class="font-bold">04</span>
+                                <span>二段階検証設計による収束効率向上</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Right column - Pipeline Visualization -->
+                <div class="col-span-8">
+                    <div class="border-2 border-neutral-900 p-6 bg-white">
+                        <h3 class="text-base mb-4 font-black tracking-wide">制作フロー全体像 / PRODUCTION FLOW</h3>
+                        
+                        <!-- Pipeline Image Container -->
+                        <div class="border-2 border-neutral-900 overflow-hidden bg-neutral-50">
+                            <img 
+                                src="https://images.unsplash.com/photo-1708807524676-86a7a4d42d2f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxnYW1lJTIwcHJvZHVjdGlvbiUyMHBpcGVsaW5lJTIwZGlhZ3JhbXxlbnwxfHx8fDE3NzE5NTc0Nzd8MA&ixlib=rb-4.1.0&q=80&w=1080"
+                                alt="Production Pipeline Flow Chart"
+                                class="w-full h-auto"
+                                style="aspect-ratio: 1206/742;"
+                            />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Production Challenges Section -->
+    <section id="workflow" class="py-16 px-6 border-t-2 border-neutral-900">
+        <div class="w-full max-w-7xl mx-auto">
+            <div class="grid grid-cols-12 gap-8">
+                <!-- Left column - Large Title -->
+                <div class="col-span-4">
+                    <h2 class="text-[120px] leading-[0.9] font-black tracking-tighter mb-8">
+                        制作<br />課題
+                    </h2>
+                </div>
+
+                <!-- Right column - Challenge Cards -->
+                <div class="col-span-8 space-y-4">
+                    <!-- Challenge 1 -->
+                    <div class="border-2 border-neutral-900 p-6">
+                        <div class="flex items-start gap-4 mb-4">
+                            <div class="w-8 h-8 border-2 border-neutral-900 bg-neutral-900 text-white flex items-center justify-center shrink-0 font-black">
+                                1
+                            </div>
+                            <h3 class="text-lg font-black flex-1">コミュニケーションギャップ</h3>
+                        </div>
+                        <div class="grid grid-cols-2 gap-6">
+                            <div>
+                                <div class="text-xs bg-neutral-900 text-white inline-block px-3 py-1 mb-3 font-bold">課題</div>
+                                <p class="text-xs leading-relaxed">
+                                    部門間の認識差により、ArtとEngineerの協力が難しく、Directorの修正指示も感覚的になりやすい状況があった。
+                                </p>
+                            </div>
+                            <div>
+                                <div class="text-xs bg-neutral-900 text-white inline-block px-3 py-1 mb-3 font-bold">解決策</div>
+                                <p class="text-xs leading-relaxed">
+                                    部門間の橋渡し役として、感覚的評価を具体的な修正指標へ言語化・構造化
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Challenge 2 -->
+                    <div class="border-2 border-neutral-900 p-6">
+                        <div class="flex items-start gap-4 mb-4">
+                            <div class="w-8 h-8 border-2 border-neutral-900 bg-neutral-900 text-white flex items-center justify-center shrink-0 font-black">
+                                2
+                            </div>
+                            <h3 class="text-lg font-black flex-1">3D制作基盤の不在</h3>
+                        </div>
+                        <div class="grid grid-cols-2 gap-6">
+                            <div>
+                                <div class="text-xs bg-neutral-900 text-white inline-block px-3 py-1 mb-3 font-bold">課題</div>
+                                <p class="text-xs leading-relaxed">
+                                    アートチームは3Dゲーム制作未経験メンバーのみで構成されていた
+                                </p>
+                            </div>
+                            <div>
+                                <div class="text-xs bg-neutral-900 text-white inline-block px-3 py-1 mb-3 font-bold">解決策</div>
+                                <ul class="space-y-2">
+                                    <li class="flex items-start gap-2">
+                                        <span class="text-xs">•</span>
+                                        <span class="text-xs leading-relaxed">制作工程分解によるパイプライン設計</span>
+                                    </li>
+                                    <li class="flex items-start gap-2">
+                                        <span class="text-xs">•</span>
+                                        <span class="text-xs leading-relaxed">Notionを活用した進行可視化管理の導入</span>
+                                    </li>
+                                    <li class="flex items-start gap-2">
+                                        <span class="text-xs">•</span>
+                                        <span class="text-xs leading-relaxed">定例進行会議設計による進捗・課題共有体制の構築</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Challenge 3 -->
+                    <div class="border-2 border-neutral-900 p-6">
+                        <div class="flex items-start gap-4 mb-4">
+                            <div class="w-8 h-8 border-2 border-neutral-900 bg-neutral-900 text-white flex items-center justify-center shrink-0 font-black">
+                                3
+                            </div>
+                            <h3 class="text-lg font-black flex-1">組織的拘束力のないプロジェクト体制</h3>
+                        </div>
+                        <div class="grid grid-cols-2 gap-6">
+                            <div>
+                                <div class="text-xs bg-neutral-900 text-white inline-block px-3 py-1 mb-3 font-bold">課題</div>
+                                <p class="text-xs leading-relaxed">
+                                    学校プロジェクトのため、メンバーの稼働率が一定せず、安定した制作体制の維持が困難な状況であった。
+                                </p>
+                            </div>
+                            <div>
+                                <div class="text-xs bg-neutral-900 text-white inline-block px-3 py-1 mb-3 font-bold">解決策</div>
+                                <ul class="space-y-2">
+                                    <li class="flex items-start gap-2">
+                                        <span class="text-xs">•</span>
+                                        <span class="text-xs leading-relaxed">教育粘性の高いコアメンバーを重点的に育成し、中核体制を構築する。</span>
+                                    </li>
+                                    <li class="flex items-start gap-2">
+                                        <span class="text-xs">•</span>
+                                        <span class="text-xs leading-relaxed">稼働が限定的なメンバーに対しては、タスクを細分化し要件を明確化することで、安定的な成果創出を図る。</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Collaboration Tools Section -->
+    <section id="tools" class="py-24 px-6 border-t-2 border-neutral-900 bg-white">
+        <div class="w-full max-w-7xl mx-auto">
+            <!-- Title Section -->
+            <div class="mb-16">
+                <h2 class="text-[140px] leading-[0.85] font-black tracking-tighter">
+                    協働ツール
+                </h2>
+                <div class="h-1 w-32 bg-neutral-900 mt-6"></div>
+            </div>
+
+            <!-- Tools Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- Discord - Large Card -->
+                <div class="border-2 border-neutral-900 overflow-hidden bg-white hover-shadow transition-all">
+                    <div class="aspect-video overflow-hidden">
+                        <img 
+                            src="https://images.unsplash.com/photo-1683029096295-7680306aa37d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxkaXNjb3JkJTIwbG9nbyUyMGljb258ZW58MXx8fHwxNzcxOTU3NDkwfDA&ixlib=rb-4.1.0&q=80&w=1080" 
+                            alt="Discord" 
+                            class="w-full h-full object-cover"
+                        />
+                    </div>
+                    <div class="p-6">
+                        <div class="text-xs bg-neutral-900 text-white inline-block px-3 py-1 font-bold mb-3">
+                            情報共有
+                        </div>
+                        <h3 class="text-2xl font-black mb-2">Discord</h3>
+                        <p class="text-sm leading-relaxed">
+                            日常的なコミュニケーション、クイックな情報交換
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Zoom - Small Text Card -->
+                <div class="border-2 border-neutral-900 p-8 bg-neutral-900 text-white flex flex-col justify-center hover:bg-neutral-800 transition-colors">
+                    <div class="text-xs text-white/60 font-bold mb-3">
+                        情報共有
+                    </div>
+                    <h3 class="text-3xl font-black mb-3">Zoom</h3>
+                    <p class="text-sm leading-relaxed text-white/80">
+                        定例会議、リモートミーティング、画面共有
+                    </p>
+                </div>
+
+                <!-- Miro - Large Card -->
+                <div class="border-2 border-neutral-900 overflow-hidden bg-white hover-shadow transition-all md:col-span-2">
+                    <div class="grid md:grid-cols-2">
+                        <div class="aspect-video md:aspect-auto overflow-hidden bg-neutral-100 flex items-center justify-center">
+                            <div class="text-6xl font-black text-neutral-300">MIRO</div>
+                        </div>
+                        <div class="p-8 flex flex-col justify-center">
+                            <div class="text-xs bg-neutral-900 text-white inline-block px-3 py-1 font-bold mb-4 w-fit">
+                                意思決定整理
+                            </div>
+                            <h3 class="text-3xl font-black mb-3">Miro</h3>
+                            <p class="text-sm leading-relaxed">
+                                ブレインストーミング、アイデア整理、ビジュアル思考
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Notion - Large Card -->
+                <div class="border-2 border-neutral-900 overflow-hidden bg-white hover-shadow transition-all">
+                    <div class="aspect-video overflow-hidden bg-neutral-100 flex items-center justify-center">
+                        <div class="text-4xl font-black text-neutral-300">NOTION</div>
+                    </div>
+                    <div class="p-6">
+                        <div class="text-xs bg-neutral-900 text-white inline-block px-3 py-1 font-bold mb-3">
+                            運営ハブ
+                        </div>
+                        <h3 class="text-2xl font-black mb-2">Notion</h3>
+                        <p class="text-sm leading-relaxed">
+                            タスク分解・進捗管理・議事録管理を統合した運営ハブとして設計
+                        </p>
+                    </div>
+                </div>
+
+                <!-- GitHub - Large Card -->
+                <div class="border-2 border-neutral-900 overflow-hidden bg-white hover-shadow transition-all">
+                    <div class="aspect-video overflow-hidden">
+                        <img 
+                            src="https://images.unsplash.com/photo-1566241440091-ec10de8db2e1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxnaXRodWIlMjBjb2RlJTIwcmVwb3NpdG9yeXxlbnwxfHx8fDE3NzE5MjgwMTZ8MA&ixlib=rb-4.1.0&q=80&w=1080" 
+                            alt="GitHub" 
+                            class="w-full h-full object-cover"
+                        />
+                    </div>
+                    <div class="p-6">
+                        <div class="text-xs bg-neutral-900 text-white inline-block px-3 py-1 font-bold mb-3">
+                            開発基盤
+                        </div>
+                        <h3 class="text-2xl font-black mb-2">GitHub</h3>
+                        <p class="text-sm leading-relaxed">
+                            バージョン管理およびチーム共同開発基盤
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Google Drive - Full Width Card -->
+                <div class="border-2 border-neutral-900 overflow-hidden bg-white hover-shadow transition-all md:col-span-2">
+                    <div class="grid md:grid-cols-2">
+                        <div class="p-8 flex flex-col justify-center order-2 md:order-1">
+                            <div class="text-xs bg-neutral-900 text-white inline-block px-3 py-1 font-bold mb-4 w-fit">
+                                ドキュメント管理
+                            </div>
+                            <h3 class="text-3xl font-black mb-3">Google Drive</h3>
+                            <p class="text-sm leading-relaxed">
+                                ドキュメント管理および共有基盤
+                            </p>
+                        </div>
+                        <div class="aspect-video md:aspect-auto overflow-hidden order-1 md:order-2 bg-neutral-100 flex items-center justify-center">
+                            <div class="text-5xl font-black text-neutral-300">DRIVE</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
